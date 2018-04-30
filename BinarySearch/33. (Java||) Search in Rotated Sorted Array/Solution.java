@@ -12,13 +12,13 @@ class Solution {
             if(nums[mid] == target) {
                 return mid;
             }else if(nums[mid]>=nums[0] ){  // two range, this is for mid is in the first range
-                if(nums[mid]<target || target < nums[0]) {
-                    left = mid+1;
+                if(nums[mid]>target && target >= nums[0]) {
+                    right= mid-1;
                 }else  {
-                    right = mid-1;
+                    left = mid+1;
                 }
             }else { //  this is for mid is in the second range
-                if(nums[mid]<target && target<nums[0]) {
+                if(nums[mid]<target && target<=nums[nums.length - 1]) {
                     left = mid+1;
                 }else {
                     right = mid-1;
