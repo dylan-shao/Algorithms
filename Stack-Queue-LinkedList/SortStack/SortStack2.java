@@ -5,22 +5,22 @@ public class SortStack2 {
     public static Stack<Integer> sortstack(Stack<Integer> input) {
         Stack<Integer> tmpStack = new Stack<Integer>();
         while(!input.isEmpty()) {
-        	int globalMin = Integer.MAX_VALUE;
+            int globalMin = Integer.MAX_VALUE;
             while(!input.isEmpty()) {
                 int tmpValue = input.pop();
                 globalMin = Math.min(globalMin, tmpValue);
                 tmpStack.push(tmpValue);
             }
             int count = 0;
-    		while(!tmpStack.isEmpty() && tmpStack.peek()>=globalMin) {
-        		int tmpValue = tmpStack.pop();
+            while(!tmpStack.isEmpty() && tmpStack.peek()>=globalMin) {
+                int tmpValue = tmpStack.pop();
                 if(tmpValue == globalMin) {
                     count++;
                 }else {
                     input.push(tmpValue);
                 }
-    		}
-        	while(count>0) {
+            }
+            while(count>0) {
                 tmpStack.push(globalMin);
                 count--;
             }
