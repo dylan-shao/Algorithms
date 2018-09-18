@@ -6,6 +6,11 @@
 * Click the repo name on top to see what the README.md looks like!
 */
 
+/* TODO: support two files in one table cell,
+ *       if I have two .java in one folder, this script will only show one .java file
+ *       to show two rows in one cell, use <br>, and refactor use array to handle multiple
+**/
+
 const fs = require('fs');
 const header =
   '> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module. \n' +
