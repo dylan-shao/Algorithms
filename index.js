@@ -30,8 +30,8 @@ fs.writeFileSync('README.md', header);
 let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
-const emoji = ':octocat:';
-const twoEmoji = emoji + emoji;
+const leafEmoji = ':seedling:';
+const twoCatEmoji = ':octocat::octocat:';
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
@@ -50,7 +50,7 @@ const twoEmoji = emoji + emoji;
 
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
-          const content = `|${twoEmoji}${twoEmoji}**${folderName}**${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}\n`;
+          const content = `|${leafEmoji}${leafEmoji}**${folderName}**${leafEmoji}${leafEmoji}|${twoCatEmoji}${twoCatEmoji}|${twoCatEmoji}${twoCatEmoji}|${twoCatEmoji}${twoCatEmoji}\n`;
           _append(content);
         }
 

@@ -7,7 +7,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
-|:octocat::octocat::octocat::octocat:**BinarySearch**:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
+|:seedling::seedling:**BinarySearch**:seedling::seedling:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
 |*`153.Find Minimum in Rotated Sorted Array`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F153.Find%20Minimum%20in%20Rotated%20Sorted%20Array/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`154.Find Minimum in Rotated Sorted Array II`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F154.Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`33-81.Search in Rotated Sorted Array II`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F33-81.Search%20in%20Rotated%20Sorted%20Array%20II/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
@@ -16,11 +16,11 @@ All algorithms are written in Java, JavaScript and Python.
 |*`35.Search Insert Position`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F35.Search%20Insert%20Position/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`658.Find K Closest Elements`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F658.Find%20K%20Closest%20Elements/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`74.Search a 2D Matrix`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F74.Search%20a%202D%20Matrix/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
-|:octocat::octocat::octocat::octocat:**IterationRecursion**:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
+|:seedling::seedling:**IterationRecursion**:seedling::seedling:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
 |*`206. Reverse Linked List`*| [Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)|[Todo...](undefined)|[Todo...](undefined)
-|:octocat::octocat::octocat::octocat:**Sort**:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
+|:seedling::seedling:**Sort**:seedling::seedling:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
 |*`SelectionSort`*| [SelectionSort.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/SelectionSort.java)|[selection_sort.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selection_sort.py)|[selectionSort.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selectionSort.js)
-|:octocat::octocat::octocat::octocat:**Stack-Queue-LinkedList**:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
+|:seedling::seedling:**Stack-Queue-LinkedList**:seedling::seedling:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:|:octocat::octocat::octocat::octocat:
 |*`155. Min Stack`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/Solution.java)|[Todo...](undefined)|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/solution.js)
 |*`206. Reverse Linked List`*| [Solution(Recursion).java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F206.%20Reverse%20Linked%20List/Solution(Recursion).java)|[Todo...](undefined)|[Todo...](undefined)
 |*`232. Implement Queue using Stacks`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/Solution.java)|[Todo...](undefined)|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/solution.js)
