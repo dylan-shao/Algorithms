@@ -1,4 +1,7 @@
+This README.md is created automatically when commit the code, used `pre-commit` to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module.
+
 ## Algorithms
+
 This is a Algorithms Practice Repo to help me understanding data structures.
 All algorithms are written in Java, JavaScript and Python.
 
