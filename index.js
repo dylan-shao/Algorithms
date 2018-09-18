@@ -32,6 +32,7 @@ let pyFiles = 0;
 let jsFiles = 0;
 const emojiForFolder = ':seedling::seedling::seedling:';
 const emojiForSeperation = ':wavy_dash::wavy_dash::wavy_dash::wavy_dash:';
+const defaultName = 'Todo...';
 
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
@@ -60,7 +61,6 @@ const emojiForSeperation = ':wavy_dash::wavy_dash::wavy_dash::wavy_dash:';
         /*-------------------------------------------------------*/
       } else {
         /*---------------------if is file----------------------*/
-        const defaultName = 'Todo...';
         let javaName = defaultName;
         let javaPath;
         let pyName = defaultName;
@@ -85,9 +85,13 @@ const emojiForSeperation = ':wavy_dash::wavy_dash::wavy_dash::wavy_dash:';
             jsPath = _getUrl(fileName);
           }
         });
-        const content = `|*\`${dir.substr(
-          dir.lastIndexOf('/') + 1
-        )}\`*| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
+        const questionName = '`*' + `${dir.substr(dir.lastIndexOf('/') + 1)}` + '*`';
+        const content =
+          `|${questionName}` +
+          `|${_getCellContent(javaName, javaPath)}` +
+          `|${_getCellContent(pyName, pyPath)}` +
+          `|${_getCellContent(jsName, jsPath)}\n`;
+
         _append(content);
 
         // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
@@ -106,6 +110,13 @@ function _append(content) {
   fs.appendFile('README.md', content, function(err) {
     if (err) throw err;
   });
+}
+
+function _getCellContent(name, path) {
+  if (name === defaultName) {
+    return defaultName;
+  }
+  return `[${name}](${path})`;
 }
 
 const summary = `\n\nTotally ${javaFiles} Java files, ${pyFiles} Python files, ${jsFiles} JavaScript files`;
