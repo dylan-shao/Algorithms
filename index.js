@@ -33,21 +33,26 @@ function getUrl(path, repoName = 'test_watch_files_create_readme', branchName = 
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
-    const file = filesOrFolders[i];
+    const fileOrFolder = filesOrFolders[i];
 
-    // ignore unwanted filesOrFolders or folders
-    if (!/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(file)) {
-      const fileOrFolderName = dir + '/' + file;
+    // ignore unwanted files or folders
+    if (!/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+      const fileOrFolderName = dir + '/' + fileOrFolder;
 
       /*---------------------if is directory-------------------*/
       if (fs.statSync(fileOrFolderName).isDirectory()) {
+        // fileOrFolderName start with ./path/to...., so remove it
         const folderName = fileOrFolderName.replace('./', '');
+
+        // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
           const content = `|**${folderName}**|*********|*********|*********\n`;
           fs.appendFile('README.md', content, function(err) {
             if (err) throw err;
           });
         }
+
+        //Recursion
         f(fileOrFolderName);
         /*-------------------------------------------------------*/
       } else {
