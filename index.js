@@ -30,7 +30,8 @@ fs.writeFileSync('README.md', header);
 let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
-
+const emoji = ':octocat:';
+const threeEmoji = emoji + emoji + emoji;
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
@@ -49,7 +50,7 @@ let jsFiles = 0;
 
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
-          const content = `|**${folderName}**|*********|*********|*********\n`;
+          const content = `|**${folderName}**${threeEmoji}${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}\n`;
           _append(content);
         }
 
@@ -83,9 +84,9 @@ let jsFiles = 0;
             jsPath = _getUrl(fileName);
           }
         });
-        const content = `|\`${dir.substr(
+        const content = `|*\`${dir.substr(
           dir.lastIndexOf('/') + 1
-        )}\`| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
+        )}\`*| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
         _append(content);
 
         // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
