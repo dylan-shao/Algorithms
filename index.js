@@ -26,7 +26,7 @@ let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
 
-function getUrl(path, repoName = 'test_watch_files_create_readme', branchName = 'master') {
+function getUrl(path, repoName = 'Algorithms', branchName = 'master') {
   return `https://github.com/dylan-shao/${repoName}/blob/${branchName}/${path}`;
 }
 
