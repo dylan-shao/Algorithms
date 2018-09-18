@@ -2,7 +2,8 @@
 * DO-NOT-REPEAT-MYSELF series: https://github.com/dylan-shao/DO-NOT-REPEAT-MYSELF
 *
 * This file will iterate the folders in this repo, and automatically generate a README.md
-* with Links and file name in there, when commit the code
+* with Links and file name in there, when commit the code.
+* Click the repo name on top to see what the README.md looks like!
 */
 
 const fs = require('fs');
