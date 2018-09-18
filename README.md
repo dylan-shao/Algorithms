@@ -1,4 +1,4 @@
-This README.md is created automatically when commit the code, used `pre-commit` to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module.
+> This README.md is created automatically when commit the code, used `pre-commit` to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module.
 
 ## Algorithms
 
