@@ -85,7 +85,7 @@ const defaultName = 'Todo...';
             jsPath = _getUrl(fileName);
           }
         });
-        const questionName = '`*' + `${dir.substr(dir.lastIndexOf('/') + 1)}` + '*`';
+        const questionName = '*' + `${dir.substr(dir.lastIndexOf('/') + 1)}` + '*';
         const content =
           `|${questionName}` +
           `|${_getCellContent(javaName, javaPath)}` +

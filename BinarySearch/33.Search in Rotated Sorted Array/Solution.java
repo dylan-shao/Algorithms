@@ -3,23 +3,25 @@ class Solution {
         if(nums.length == 0 || nums == null || target <nums[0]&& target > nums[nums.length-1]) {
             return -1;
         }
-        
+
         int left = 0;
         int right = nums.length -1;
-        
+
         while(left<=right){
             int mid = left + (right - left)/2;
             if(nums[mid] == target) {
                 return mid;
             }
-            
+
             if(nums[mid]>=nums[left] ){  // two range, this is for mid is in the first range
+                // (r1, r1, left) "(r1, r1, right)" (r1, r2, left)
                 if(nums[mid]>target && target >= nums[left]) {
                     right= mid-1;
                 }else  {
                     left = mid+1;
                 }
             }else { //  this is for mid is in the second range
+                // (r2, r1, right) "(r2, r2, left)" (r2, r2, right)
                 if(nums[mid]<target && target<=nums[right]) {
                     left = mid+1;
                 }else {
@@ -27,7 +29,7 @@ class Solution {
                 }
             }
         }
-        
+
         return -1;
     }
 }
@@ -38,10 +40,10 @@ class Solution {
 //         if(nums.length == 0 || nums == null || target <nums[0]&& target > nums[nums.length-1]) {
 //             return -1;
 //         }
-        
+
 //         int left = 0;
 //         int right = nums.length -1;
-        
+
 //         while(left<=right){
 //             int mid = left + (right - left)/2;
 //             if(nums[mid] == target) {
@@ -60,7 +62,7 @@ class Solution {
 //                 }
 //             }
 //         }
-        
+
 //         return -1;
 //     }
 // }
