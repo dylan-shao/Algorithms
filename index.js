@@ -31,7 +31,7 @@ let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
 const emoji = ':octocat:';
-const threeEmoji = emoji + emoji + emoji;
+const twoEmoji = emoji + emoji;
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
@@ -50,7 +50,7 @@ const threeEmoji = emoji + emoji + emoji;
 
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
-          const content = `|**${folderName}**${threeEmoji}${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}|${threeEmoji}${threeEmoji}\n`;
+          const content = `|${twoEmoji}${twoEmoji}**${folderName}**${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}|${twoEmoji}${twoEmoji}\n`;
           _append(content);
         }
 
