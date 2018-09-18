@@ -26,10 +26,6 @@ let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
 
-function getUrl(path, repoName = 'Algorithms', branchName = 'master') {
-  return `https://github.com/dylan-shao/${repoName}/blob/${branchName}/${path}`;
-}
-
 (function f(dir) {
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
@@ -47,9 +43,7 @@ function getUrl(path, repoName = 'Algorithms', branchName = 'master') {
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
           const content = `|**${folderName}**|*********|*********|*********\n`;
-          fs.appendFile('README.md', content, function(err) {
-            if (err) throw err;
-          });
+          _append(content);
         }
 
         //Recursion
@@ -71,21 +65,19 @@ function getUrl(path, repoName = 'Algorithms', branchName = 'master') {
           if (file.indexOf('.java') >= 0) {
             javaFiles++;
             javaName = file;
-            javaPath = getUrl(fileName);
+            javaPath = _getUrl(fileName);
           } else if (file.indexOf('.py') >= 0) {
             pyFiles++;
             pyName = file;
-            pyPath = getUrl(fileName);
+            pyPath = _getUrl(fileName);
           } else if (file.indexOf('.js') >= 0) {
             jsFiles++;
             jsName = file;
-            jsPath = getUrl(fileName);
+            jsPath = _getUrl(fileName);
           }
         });
         const content = `|| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
-        fs.appendFile('README.md', content, function(err) {
-          if (err) throw err;
-        });
+        _append(content);
 
         // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
         break;
@@ -94,8 +86,18 @@ function getUrl(path, repoName = 'Algorithms', branchName = 'master') {
     }
   }
 })('.');
+
+function _getUrl(path, repoName = 'Algorithms', branchName = 'master') {
+  return `https://github.com/dylan-shao/${repoName}/blob/${branchName}/${path}`;
+}
+
+function _append(content) {
+  fs.appendFile('README.md', content, function(err) {
+    if (err) throw err;
+  });
+}
+
 const summary = `\n\nTotally ${javaFiles} java files, ${pyFiles} python files, ${jsFiles} JaaScript files`;
-fs.appendFile('README.md', summary, function(err) {
-  if (err) throw err;
-});
+_append(summary);
+
 console.log(summary);
