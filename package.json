@@ -1,0 +1,29 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "This is a Algorithms Practice Repo to help me understanding data structures. All algorithms are written in Java, JavaScript and Python.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lint-staged": "^7.2.2",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "pre-commit": "lint-staged"
+  },
+  "pre-commit": ["pre-commit"],
+  "lint-staged": {
+    "*.js": ["prettier --write", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylan-shao/Algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylan-shao/Algorithms/issues"
+  },
+  "homepage": "https://github.com/dylan-shao/Algorithms#readme"
+}

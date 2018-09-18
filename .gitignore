@@ -1,3 +1,5 @@
 .ipynb_checkpoints
-
+*.ipynb
 py_playground/README.md
+
+node_modules
