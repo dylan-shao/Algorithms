@@ -81,7 +81,7 @@ function getUrl(path, repoName = 'test_watch_files_create_readme', branchName = 
     }
   }
 })('.');
-const summary = `Totally ${javaFiles} java files, ${pyFiles} python files, ${jsFiles} JaaScript files`;
+const summary = `\n\nTotally ${javaFiles} java files, ${pyFiles} python files, ${jsFiles} JaaScript files`;
 fs.appendFile('README.md', summary, function(err) {
   if (err) throw err;
 });
