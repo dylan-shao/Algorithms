@@ -97,7 +97,7 @@ function _append(content) {
   });
 }
 
-const summary = `\n\nTotally ${javaFiles} java files, ${pyFiles} python files, ${jsFiles} JaaScript files`;
+const summary = `\n\nTotally ${javaFiles} Java files, ${pyFiles} Python files, ${jsFiles} JavaScript files`;
 _append(summary);
 
 console.log(summary);

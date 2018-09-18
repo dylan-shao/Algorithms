@@ -28,4 +28,4 @@ All algorithms are written in Java, JavaScript and Python.
 || [SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)|[Todo...](undefined)|[Todo...](undefined)
 
 
-Totally 19 java files, 1 python files, 3 JaaScript files
+Totally 19 Java files, 1 Python files, 3 JavaScript files
