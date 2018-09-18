@@ -11,7 +11,7 @@ All algorithms are written in Java, JavaScript and Python.
 |*`153.Find Minimum in Rotated Sorted Array`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F153.Find%20Minimum%20in%20Rotated%20Sorted%20Array/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`154.Find Minimum in Rotated Sorted Array II`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F154.Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`33-81.Search in Rotated Sorted Array II`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F33-81.Search%20in%20Rotated%20Sorted%20Array%20II/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
-|*`33.Search in Rotated Sorted Array`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F33.Search%20in%20Rotated%20Sorted%20Array/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
+|*`33.Search in Rotated Sorted Array`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F33.Search%20in%20Rotated%20Sorted%20Array/Solution.java)|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F33.Search%20in%20Rotated%20Sorted%20Array/Solution.py)|[Todo...](undefined)
 |*`34.Search for a Range`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F34.Search%20for%20a%20Range/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`35.Search Insert Position`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F35.Search%20Insert%20Position/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
 |*`658.Find K Closest Elements`*| [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F658.Find%20K%20Closest%20Elements/Solution.java)|[Todo...](undefined)|[Todo...](undefined)
@@ -28,4 +28,4 @@ All algorithms are written in Java, JavaScript and Python.
 |*`SortStack`*| [SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)|[Todo...](undefined)|[Todo...](undefined)
 
 
-Totally 19 Java files, 1 Python files, 3 JavaScript files
+Totally 19 Java files, 2 Python files, 3 JavaScript files
