@@ -10,12 +10,13 @@
     "prettier": "^1.14.2"
   },
   "scripts": {
-    "pre-commit": "lint-staged"
+    "create-md": "node index.js",
+    "add": "git add ."
   },
-  "pre-commit": ["pre-commit"],
-  "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
-  },
+  "pre-commit": [
+    "create-md",
+    "add"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dylan-shao/Algorithms.git"
