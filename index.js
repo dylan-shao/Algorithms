@@ -18,79 +18,71 @@ let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
 
-function getUrl(
-  path,
-  repoName = 'test_watch_files_create_readme',
-  branchName = 'master',
-) {
+function getUrl(path, repoName = 'test_watch_files_create_readme', branchName = 'master') {
   return `https://github.com/dylan-shao/${repoName}/blob/${branchName}/${path}`;
 }
 
 (function f(dir) {
-  fs.readdir(dir, (err, files) => {
-    for (let i = 0; i < files.length; i++) {
-      const file = files[i];
+  const filesOrFolders = fs.readdirSync(dir);
+  for (let i = 0; i < filesOrFolders.length; i++) {
+    const file = filesOrFolders[i];
 
-      // ignore unwanted files or folders
-      if (
-        !/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(
-          file,
-        )
-      ) {
-        const fileOrFolderName = dir + '/' + file;
+    // ignore unwanted filesOrFolders or folders
+    if (!/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(file)) {
+      const fileOrFolderName = dir + '/' + file;
 
-        /*---------------------if is directory-------------------*/
-        if (fs.statSync(fileOrFolderName).isDirectory()) {
-          const folderName = fileOrFolderName.replace('./', '');
-          if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
-            const content = `|**${folderName}**|*********|*********|*********\n`;
-            fs.appendFile('README.md', content, function(err) {
-              if (err) throw err;
-              console.log('Saved!');
-            });
-          }
-          f(fileOrFolderName);
-          /*-------------------------------------------------------*/
-        } else {
-          /*---------------------if is file----------------------*/
-          const defaultName = 'Todo...';
-          let javaName = defaultName;
-          let javaPath;
-          let pyName = defaultName;
-          let pyPath;
-          let jsName = defaultName;
-          let jsPath;
-          // if this is file, get parent folder, check all files at once and save them into one line content
-          const files = fs.readdirSync(dir);
-          files.forEach(file => {
-            console.log('######', file);
-            const fileName = (dir + '/' + file).replace('./', '');
-            if (file.indexOf('.java') >= 0) {
-              javaFiles++;
-              javaName = file;
-              javaPath = getUrl(fileName);
-            } else if (file.indexOf('.py') >= 0) {
-              pyFiles++;
-              pyName = file;
-              pyPath = getUrl(fileName);
-            } else if (file.indexOf('.js') >= 0) {
-              jsFiles++;
-              jsName = file;
-              jsPath = getUrl(fileName);
-            }
-          });
-          const content = `|| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
+      /*---------------------if is directory-------------------*/
+      if (fs.statSync(fileOrFolderName).isDirectory()) {
+        const folderName = fileOrFolderName.replace('./', '');
+        if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
+          const content = `|**${folderName}**|*********|*********|*********\n`;
           fs.appendFile('README.md', content, function(err) {
             if (err) throw err;
-            console.log('Saved!');
           });
-
-          // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
-          break;
-          /*----------------------------------------------------*/
         }
+        f(fileOrFolderName);
+        /*-------------------------------------------------------*/
+      } else {
+        /*---------------------if is file----------------------*/
+        const defaultName = 'Todo...';
+        let javaName = defaultName;
+        let javaPath;
+        let pyName = defaultName;
+        let pyPath;
+        let jsName = defaultName;
+        let jsPath;
+        // if this is file, get parent folder, check all files at once and save them into one line content
+        const files = fs.readdirSync(dir);
+        files.forEach(file => {
+          const fileName = (encodeURIComponent(dir) + '/' + file).replace('./', '');
+          if (file.indexOf('.java') >= 0) {
+            javaFiles++;
+            javaName = file;
+            javaPath = getUrl(fileName);
+          } else if (file.indexOf('.py') >= 0) {
+            pyFiles++;
+            pyName = file;
+            pyPath = getUrl(fileName);
+          } else if (file.indexOf('.js') >= 0) {
+            jsFiles++;
+            jsName = file;
+            jsPath = getUrl(fileName);
+          }
+        });
+        const content = `|| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
+        fs.appendFile('README.md', content, function(err) {
+          if (err) throw err;
+        });
+
+        // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
+        break;
+        /*----------------------------------------------------*/
       }
     }
-    console.log(javaFiles, pyFiles, jsFiles);
-  });
+  }
 })('.');
+const summary = `Totally ${javaFiles} java files, ${pyFiles} python files, ${jsFiles} JaaScript files`;
+fs.appendFile('README.md', summary, function(err) {
+  if (err) throw err;
+});
+console.log(summary);
