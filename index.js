@@ -6,9 +6,9 @@
 * Click the repo name on top to see what the README.md looks like!
 */
 
-/* TODO: support two files in one table cell,
- *       if I have two .java in one folder, this script will only show one .java file
- *       to show two rows in one cell, use <br>, and refactor use array to handle multiple
+/* TODO: support multiple items in one table cell,
+ *       if I have two or more .java in one folder, this script will only show one .java file
+ *       to show multiple rows in one cell, use <br>, and refactor use array to handle multiple
 **/
 
 const fs = require('fs');

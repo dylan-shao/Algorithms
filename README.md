@@ -25,6 +25,7 @@ All algorithms are written in Java, JavaScript and Python.
 || [Solution(Recursion).java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F206.%20Reverse%20Linked%20List/Solution(Recursion).java)|[Todo...](undefined)|[Todo...](undefined)
 || [Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/Solution.java)|[Todo...](undefined)|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/solution.js)
 || [Deque.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FDeque/Deque.java)|[Todo...](undefined)|[Todo...](undefined)
+|| [SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)|[Todo...](undefined)|[Todo...](undefined)
 
 
-Totally 19 Java files, 1 Python files, 3 JavaScript files|| [SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)|[Todo...](undefined)|[Todo...](undefined)
+Totally 19 Java files, 1 Python files, 3 JavaScript files
