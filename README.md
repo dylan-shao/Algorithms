@@ -1,13 +1,10 @@
-> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module.
-
 ## Algorithms
-
 This is a Algorithms Practice Repo to help me understanding data structures.
 All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-|Algorithm|  Java           | Python  |  JavaScript
+|Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
 |**BinarySearch**|*********|*********|*********
 || [Solution.java](https://github.com/dylan-shao/test_watch_files_create_readme/blob/master/.%2FBinarySearch%2F153.%20-Java%20-%20-Find%20Minimum%20in%20Rotated%20Sorted%20Array/Solution.java)|[Todo...](undefined)|[Todo...](undefined)

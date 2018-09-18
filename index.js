@@ -1,3 +1,10 @@
+/*
+* DO-NOT-REPEAT-MYSELF series: https://github.com/dylan-shao/DO-NOT-REPEAT-MYSELF
+*
+* This file will iterate the folders in this repo, and automatically generate a README.md
+* with Links and file name in there, when commit the code
+*/
+
 const fs = require('fs');
 const header =
   '## Algorithms\n' +
@@ -8,11 +15,10 @@ const header =
   '----------' +
   '\n' +
   '\n' +
-  '|Algorithm|  Java           | Python  |  JavaScript\n' +
+  '|Algorithm|  Java  | Python  |  JavaScript\n' +
   '|--- |:--------------:| :-------:|  :---:\n';
 
 fs.writeFileSync('README.md', header);
-console.log('write header done!');
 
 let javaFiles = 0;
 let pyFiles = 0;
