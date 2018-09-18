@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const header =
+  '> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script](https://github.com/dylan-shao/Algorithms/blob/master/index.js), which create a README.md by iterating the folders using the `nodejs` `fs` module. \n' +
   '## Algorithms\n' +
   'This is a Algorithms Practice Repo to help me understanding data structures.\n' +
   'All algorithms are written in Java, JavaScript and Python.' +
