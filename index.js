@@ -37,7 +37,9 @@ let jsFiles = 0;
     const fileOrFolder = filesOrFolders[i];
 
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+    if (
+      !/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)
+    ) {
       const fileOrFolderName = dir + '/' + fileOrFolder;
 
       /*---------------------if is directory-------------------*/
@@ -81,7 +83,9 @@ let jsFiles = 0;
             jsPath = _getUrl(fileName);
           }
         });
-        const content = `|| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
+        const content = `|\`${dir.substr(
+          dir.lastIndexOf('/') + 1
+        )}\`| [${javaName}](${javaPath})|[${pyName}](${pyPath})|[${jsName}](${jsPath})\n`;
         _append(content);
 
         // if is file, break out of the loop, because we already jumped out to the parent and appended the content above
