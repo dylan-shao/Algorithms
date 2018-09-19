@@ -26,6 +26,8 @@ All algorithms are written in Java, JavaScript and Python.
 |*232. Implement Queue using Stacks*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/Solution.java)|Todo...|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/solution.js)
 |*Deque*|[Deque.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FDeque/Deque.java)|Todo...|Todo...
 |*SortStack*|[SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)|Todo...|Todo...
+|:seedling::seedling::seedling:**others**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
+|*Two Sum*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2FTwo%20Sum/Solution.py)|Todo...
 
 
-Totally 19 Java files, 2 Python files, 3 JavaScript files
+Totally 19 Java files, 3 Python files, 3 JavaScript files
