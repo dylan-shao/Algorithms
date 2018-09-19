@@ -8,9 +8,9 @@
 
 const fs = require('fs');
 
+const fileName = 'README.md';
 const summary =
   'Totally {{javaFiles}} Java files, {{pyFiles}} Python files, {{jsFiles}} JavaScript files';
-
 const header =
   '> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script to create a README.md by iterating the folders using the `nodejs` `fs` module](https://github.com/dylan-shao/Algorithms/blob/master/index.js). \n' +
   '## Algorithms\n' +
@@ -27,7 +27,7 @@ const header =
   '|Algorithm|  Java  | Python  |  JavaScript\n' +
   '|--- |:--------------:| :-------:|  :---:\n';
 
-fs.writeFileSync('README.md', header);
+fs.writeFileSync(fileName, header);
 
 let javaFiles = 0;
 let pyFiles = 0;
@@ -68,10 +68,10 @@ const defaultName = 'Todo...';
         const contents = { java: [], py: [], js: [] };
 
         files.forEach(file => {
-          const fileName = (encodeURIComponent(dir) + '/' + file).replace('./', '');
+          const filePath = (encodeURIComponent(dir) + '/' + file).replace('./', '');
 
           const name = file;
-          const path = _getUrl(fileName);
+          const path = _getUrl(filePath);
 
           if (file.indexOf('.java') >= 0) {
             javaFiles++;
@@ -102,14 +102,14 @@ const defaultName = 'Todo...';
 })('.');
 
 /*---------------------------replace placeholders---------------------------*/
-const data = fs.readFileSync('README.md').toString();
+const data = fs.readFileSync(fileName).toString();
 
 const replaceMap = {
   '{{javaFiles}}': javaFiles,
   '{{pyFiles}}': pyFiles,
   '{{jsFiles}}': jsFiles
 };
-fs.writeFileSync('README.md', _parseString(data, replaceMap), function(err) {
+fs.writeFileSync(fileName, _parseString(data, replaceMap), function(err) {
   if (err) throw err;
 });
 
@@ -121,7 +121,7 @@ function _getUrl(path, repoName = 'Algorithms', branchName = 'master') {
 }
 
 function _append(content) {
-  fs.appendFile('README.md', content, function(err) {
+  fs.appendFile(fileName, content, function(err) {
     if (err) throw err;
   });
 }
