@@ -6,11 +6,6 @@
 * Click the repo name on top to see what the README.md looks like!
 */
 
-/* TODO: support multiple items in one table cell,
- *       if I have two or more .java in one folder, this script will only show one .java file
- *       to show multiple rows in one cell, use <br>, and refactor use array to handle multiple
-**/
-
 const fs = require('fs');
 const header =
   '> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script to create a README.md by iterating the folders using the `nodejs` `fs` module](https://github.com/dylan-shao/Algorithms/blob/master/index.js). \n' +
@@ -61,36 +56,33 @@ const defaultName = 'Todo...';
         /*-------------------------------------------------------*/
       } else {
         /*---------------------if is file----------------------*/
-        let javaName = defaultName;
-        let javaPath;
-        let pyName = defaultName;
-        let pyPath;
-        let jsName = defaultName;
-        let jsPath;
-        // if this is file, get parent folder, check all files at once and save them into one line content
+        // get parent folder, check all files at once and save them into one line content
         const files = fs.readdirSync(dir);
+        const contents = { java: [], py: [], js: [] };
+
         files.forEach(file => {
           const fileName = (encodeURIComponent(dir) + '/' + file).replace('./', '');
+
+          const name = file;
+          const path = _getUrl(fileName);
+
           if (file.indexOf('.java') >= 0) {
             javaFiles++;
-            javaName = file;
-            javaPath = _getUrl(fileName);
+            contents.java.push({ name, path });
           } else if (file.indexOf('.py') >= 0) {
             pyFiles++;
-            pyName = file;
-            pyPath = _getUrl(fileName);
+            contents.py.push({ name, path });
           } else if (file.indexOf('.js') >= 0) {
             jsFiles++;
-            jsName = file;
-            jsPath = _getUrl(fileName);
+            contents.js.push({ name, path });
           }
         });
         const questionName = '*' + `${dir.substr(dir.lastIndexOf('/') + 1)}` + '*';
         const content =
           `|${questionName}` +
-          `|${_getCellContent(javaName, javaPath)}` +
-          `|${_getCellContent(pyName, pyPath)}` +
-          `|${_getCellContent(jsName, jsPath)}\n`;
+          `|${_getCellContent(contents.java)}` +
+          `|${_getCellContent(contents.py)}` +
+          `|${_getCellContent(contents.js)}\n`;
 
         _append(content);
 
@@ -112,11 +104,16 @@ function _append(content) {
   });
 }
 
-function _getCellContent(name, path) {
-  if (name === defaultName) {
+// arg: [{name:'', path:''},...]
+function _getCellContent(arr) {
+  if (!arr.length) {
     return defaultName;
   }
-  return `[${name}](${path})`;
+  let res = '';
+  arr.forEach(({ name, path }) => {
+    res += `[${name}](${path})<br>`;
+  });
+  return res;
 }
 
 const summary = `\n\nTotally ${javaFiles} Java files, ${pyFiles} Python files, ${jsFiles} JavaScript files`;
