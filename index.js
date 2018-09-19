@@ -7,6 +7,10 @@
 */
 
 const fs = require('fs');
+
+const summary =
+  'Totally {{javaFiles}} Java files, {{pyFiles}} Python files, {{jsFiles}} JavaScript files';
+
 const header =
   '> This README.md is created automatically when commit the code, used [`pre-commit`](https://www.npmjs.com/package/pre-commit) to hook up [this script to create a README.md by iterating the folders using the `nodejs` `fs` module](https://github.com/dylan-shao/Algorithms/blob/master/index.js). \n' +
   '## Algorithms\n' +
@@ -15,6 +19,9 @@ const header =
   '\n' +
   '\n' +
   '----------' +
+  '\n' +
+  '\n' +
+  summary +
   '\n' +
   '\n' +
   '|Algorithm|  Java  | Python  |  JavaScript\n' +
@@ -94,6 +101,21 @@ const defaultName = 'Todo...';
   }
 })('.');
 
+/*---------------------------replace placeholders---------------------------*/
+const data = fs.readFileSync('README.md').toString();
+
+const replaceMap = {
+  '{{javaFiles}}': javaFiles,
+  '{{pyFiles}}': pyFiles,
+  '{{jsFiles}}': jsFiles
+};
+fs.writeFileSync('README.md', _parseString(data, replaceMap), function(err) {
+  if (err) throw err;
+});
+
+console.log(_parseString(summary, replaceMap));
+
+/*------------------------------Utilities-------------------------------------*/
 function _getUrl(path, repoName = 'Algorithms', branchName = 'master') {
   return `https://github.com/dylan-shao/${repoName}/blob/${branchName}/${path}`;
 }
@@ -116,7 +138,12 @@ function _getCellContent(arr) {
   return res;
 }
 
-const summary = `\n\nTotally ${javaFiles} Java files, ${pyFiles} Python files, ${jsFiles} JavaScript files`;
-_append(summary);
+// const summary = `\nTotally ${javaFiles} Java files, ${pyFiles} Python files, ${jsFiles} JavaScript files\n`;
+// replace string with values defined in the mapObj, whose key is the string you want to replace, and value is the value
+function _parseString(str, mapObj) {
+  var re = new RegExp(Object.keys(mapObj).join('|'), 'gi');
 
-console.log(summary);
+  return str.replace(re, function(matched) {
+    return mapObj[matched];
+  });
+}

@@ -5,6 +5,8 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
+Totally 19 Java files, 3 Python files, 3 JavaScript files
+
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
 |:seedling::seedling::seedling:**BinarySearch**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
@@ -28,6 +30,3 @@ All algorithms are written in Java, JavaScript and Python.
 |*SortStack*|[SortStack.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack.java)<br>[SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**others**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*Two Sum*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2FTwo%20Sum/Solution.py)<br>|Todo...
-
-
-Totally 19 Java files, 3 Python files, 3 JavaScript files
