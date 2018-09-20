@@ -34,6 +34,8 @@ class Solution:
 
             # if in range 1
             if nums[mid] >= nums[left]:
+                # lets define a tuple (a,b,c) where "a" represents the position of mid,
+                #              and "b" represents position of target, "c" represents the value we need to change, left or right
                 # (r1, r1, left) "(r1,r1,right)" (r1,r2,left),
                 # see detailed comments on another solution very below
                 if nums[mid] > target and target >= nums[left]:

@@ -29,7 +29,9 @@ class Solution:
                 return True
 
             if nums[mid] > nums[left]:
-                #(r1, r1, left) (r1, r1,right) (r1,r2,left)
+                # lets define a tuple (a,b,c) where "a" represents the position of mid,
+                #              and "b" represents position of target, "c" represents the value we need to change, left or right
+                # (r1, r1, left) (r1, r1,right) (r1,r2,left)
                 # see detailed comments on 33. python solution
                 if nums[mid] > target and target >= nums[left]:
                     right = mid - 1
