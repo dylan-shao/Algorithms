@@ -32,19 +32,27 @@ class Solution:
             if nums[mid] == target:
                 return mid
 
+            # one pivot, so we have two range, range1, range2,
+            # where the more left value of range1 is less than most right value of range2
+            #
             # if in range 1
             if nums[mid] >= nums[left]:
                 # lets define a tuple (a,b,c) where "a" represents the position of mid,
                 #              and "b" represents position of target, "c" represents the value we need to change, left or right
-                # (r1, r1, left) "(r1,r1,right)" (r1,r2,left),
-                # see detailed comments on another solution very below
+                #
+                # When mid is in range 1:
+                #    there are 3 options to move:
+                # (r1, r1, left) "(r1,r1,right)" (r1,r2,left)
+                # So totally, we have 2 options to set left, and one option to set right, so we find the condition to set right first, because it's only one possible:
+                # which is (r1,r1,right) when nums[mid] large than target, and target is  in range1
                 if nums[mid] > target and target >= nums[left]:
                     right = mid - 1
                 else:
                     left = mid + 1
             # if in range 2
             else:
-                # (r2, r1, right) "(r2, r2, left)" (r2, r2, right)
+                # same as above, (r2, r1, right) "(r2, r2, left)" (r2, r2, right)
+                # so we find the unqiue one which is move left  "(r2, r2, left)", nums[mid] less than target, and target in range2
                 if nums[mid] < target and target <= nums[right]:
                     left = mid + 1
                 else:
@@ -56,8 +64,6 @@ class Solution:
             return right
         else:
             return -1
-
-
 
 
 #
