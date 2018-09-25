@@ -4,12 +4,15 @@ class Solution:
         high = len(list) - 1
         Solution.helper(list, low, high)
         return list
+    
     def helper(list, low, high):
         if low < high:
             pivot = Solution.partition(list, low, high)
             Solution.helper(list, low, pivot - 1)
             Solution.helper(list, pivot, high)
+
     def partition(list, low, high):
+        right = high
         pivot = list[high]
         high -= 1
         while low <= high:
@@ -21,4 +24,5 @@ class Solution:
                 list[low], list[high] = list[high], list[low]
                 low += 1
                 high -= 1
+        list[low], list[right] = list[right], list[low]
         return low
