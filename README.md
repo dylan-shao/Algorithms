@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 6 Python files, 3 JavaScript files
+Totally 20 Java files, 7 Python files, 3 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -21,6 +21,7 @@ Totally 20 Java files, 6 Python files, 3 JavaScript files
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
+|*QuickSort*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FQuickSort/Solution.py)<br>|Todo...
 |*SelectionSort*|[SelectionSort.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/SelectionSort.java)<br>|[selection_sort.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selection_sort.py)<br>|[selectionSort.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selectionSort.js)<br>
 |:seedling::seedling::seedling:**Stack-Queue-LinkedList**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*155. Min Stack*|[Follow-up-Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/Follow-up-Solution.java)<br>[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/Solution.java)<br>|Todo...|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/solution.js)<br>
