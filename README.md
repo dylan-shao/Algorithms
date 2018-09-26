@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 8 Python files, 3 JavaScript files
+Totally 20 Java files, 10 Python files, 3 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -18,6 +18,8 @@ Totally 20 Java files, 8 Python files, 3 JavaScript files
 |*35.Search Insert Position*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F35.Search%20Insert%20Position/Solution.java)<br>|Todo...|Todo...
 |*658.Find K Closest Elements*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F658.Find%20K%20Closest%20Elements/Solution.java)<br>|Todo...|Todo...
 |*74.Search a 2D Matrix*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F74.Search%20a%202D%20Matrix/Solution.java)<br>|Todo...|Todo...
+|:seedling::seedling::seedling:**DP**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
+|*322. Coin Change*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP%2Ftmp%2F322.%20Coin%20Change/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
@@ -26,7 +28,7 @@ Totally 20 Java files, 8 Python files, 3 JavaScript files
 |:seedling::seedling::seedling:**Stack-Queue-LinkedList**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*155. Min Stack*|[Follow-up-Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/Follow-up-Solution.java)<br>[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/Solution.java)<br>|Todo...|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F155.%20Min%20Stack/solution.js)<br>
 |*206. Reverse Linked List*|[Solution(Iteration).java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F206.%20Reverse%20Linked%20List/Solution(Iteration).java)<br>[Solution(Recursion).java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F206.%20Reverse%20Linked%20List/Solution(Recursion).java)<br>|Todo...|Todo...
-|*232. Implement Queue using Stacks*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/Solution.java)<br>|Todo...|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/solution.js)<br>
+|*232. Implement Queue using Stacks*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/Solution.java)<br>|[MyQueue.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/MyQueue.py)<br>|[solution.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2F232.%20Implement%20Queue%20using%20Stacks/solution.js)<br>
 |*Deque*|[Deque.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FDeque/Deque.java)<br>|Todo...|Todo...
 |*SortStack*|[SortStack.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack.java)<br>[SortStack2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FStack-Queue-LinkedList%2FSortStack/SortStack2.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**others**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
