@@ -42,7 +42,7 @@ const defaultName = 'Todo...';
     const fileOrFolder = filesOrFolders[i];
 
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+    if (!/^(node_modules)|^(tmp)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)) {
       const fileOrFolderName = dir + '/' + fileOrFolder;
 
       /*---------------------if is directory-------------------*/
