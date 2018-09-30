@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 9 Python files, 3 JavaScript files
+Totally 20 Java files, 10 Python files, 3 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -19,6 +19,7 @@ Totally 20 Java files, 9 Python files, 3 JavaScript files
 |*658.Find K Closest Elements*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F658.Find%20K%20Closest%20Elements/Solution.java)<br>|Todo...|Todo...
 |*74.Search a 2D Matrix*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F74.Search%20a%202D%20Matrix/Solution.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**DP**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
+|*32. Longest Valid Parentheses*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP%2F32.%20Longest%20Valid%20Parentheses/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
