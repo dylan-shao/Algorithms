@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 10 Python files, 3 JavaScript files
+Totally 20 Java files, 11 Python files, 3 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -18,6 +18,8 @@ Totally 20 Java files, 10 Python files, 3 JavaScript files
 |*35.Search Insert Position*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F35.Search%20Insert%20Position/Solution.java)<br>|Todo...|Todo...
 |*658.Find K Closest Elements*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F658.Find%20K%20Closest%20Elements/Solution.java)<br>|Todo...|Todo...
 |*74.Search a 2D Matrix*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FBinarySearch%2F74.Search%20a%202D%20Matrix/Solution.java)<br>|Todo...|Todo...
+|:seedling::seedling::seedling:**DFS**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
+|*516. Longest Palindromic Subsequence*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDFS%2F516.%20Longest%20Palindromic%20Subsequence/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**DP**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*32. Longest Valid Parentheses*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP%2F32.%20Longest%20Valid%20Parentheses/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
