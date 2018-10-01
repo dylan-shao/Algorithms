@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 11 Python files, 3 JavaScript files
+Totally 20 Java files, 12 Python files, 3 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -22,6 +22,7 @@ Totally 20 Java files, 11 Python files, 3 JavaScript files
 |*516. Longest Palindromic Subsequence*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDFS%2F516.%20Longest%20Palindromic%20Subsequence/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**DP**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*32. Longest Valid Parentheses*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP%2F32.%20Longest%20Valid%20Parentheses/Solution.py)<br>|Todo...
+|*516. Longest Palindromic Subsequence*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP%2F516.%20Longest%20Palindromic%20Subsequence/Solution.py)<br>|Todo...
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:|:wavy_dash::wavy_dash::wavy_dash::wavy_dash:

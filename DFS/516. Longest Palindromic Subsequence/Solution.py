@@ -1,3 +1,4 @@
+# See another solution in DP
 class Solution:
     def longestPalindromeSubseq(self, s):
         """
@@ -15,7 +16,7 @@ class Solution:
             return 1
 
         if (start,end) in dic:
-                return dic[(start,end)]
+            return dic[(start,end)]
 
         if s[start] == s[end]:
             res = self.__dfs(s, start + 1, end - 1,dic) + 2
