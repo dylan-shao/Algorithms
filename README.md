@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 11 Python files, 3 JavaScript files
+Totally 20 Java files, 11 Python files, 6 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript
 |--- |:--------------:| :-------:|  :---:
@@ -37,3 +37,4 @@ Totally 20 Java files, 11 Python files, 3 JavaScript files
 |*238. Product of Array Except Self*|[Solution.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F238.%20Product%20of%20Array%20Except%20Self/Solution.java)<br>|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F238.%20Product%20of%20Array%20Except%20Self/Solution.py)<br>|Todo...
 |*297.Serialize and Deserialize Binary Tree*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F297.Serialize%20and%20Deserialize%20Binary%20Tree/Solution.py)<br>|Todo...
 |*41. First Missing Positive*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F41.%20First%20Missing%20Positive/Solution.py)<br>|Todo...
+|*.*|Todo...|Todo...|[index.js](https://github.com/dylan-shao/Algorithms/blob/master/index.js)<br>[package-lock.json](https://github.com/dylan-shao/Algorithms/blob/master/package-lock.json)<br>[package.json](https://github.com/dylan-shao/Algorithms/blob/master/package.json)<br>
