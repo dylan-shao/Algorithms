@@ -51,7 +51,8 @@ class Solution:
 
 
 #-------------------------- DFS --------------------------------------
-# See another solution in DP
+# time O(2^n)
+# pace O(n)
 class Solution2:
     def longestPalindromeSubseq(self, s):
         """
