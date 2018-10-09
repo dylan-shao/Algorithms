@@ -40,10 +40,12 @@ const defaultName = 'Todo...';
   const filesOrFolders = fs.readdirSync(dir);
   for (let i = 0; i < filesOrFolders.length; i++) {
     const fileOrFolder = filesOrFolders[i];
-
+    console.log(fileOrFolder, '@@@@@@@@@@@')
+    console.log(!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|.md$|((^|[\/\\])\..)/.test(fileOrFolder));
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^(tmp)|^package.*$|^index\.js.*$|^README\.md.*$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|.md$|((^|[\/\\])\..)/.test(fileOrFolder)) {
       const fileOrFolderName = dir + '/' + fileOrFolder;
+      console.log(fileOrFolderName, '%%%%%%%%%%')
 
       /*---------------------if is directory-------------------*/
       if (fs.statSync(fileOrFolderName).isDirectory()) {
