@@ -25,7 +25,7 @@ const header =
   '\n' +
   '\n' +
   '|Algorithm|  Java  | Python  |  JavaScript  | Thinking \n' +
-  '|--- |:--------------:| :-------:| :-------:|  :---:\n';
+  '|--- |:---:| :---:| :---:|  :---:\n';
 
 fs.writeFileSync(fileName, header);
 
