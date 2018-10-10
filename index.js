@@ -24,8 +24,8 @@ const header =
   summary +
   '\n' +
   '\n' +
-  '|Algorithm|  Java  | Python  |  JavaScript\n' +
-  '|--- |:--------------:| :-------:|  :---:\n';
+  '|Algorithm|  Java  | Python  |  JavaScript  | Thinking \n' +
+  '|--- |:--------------:| :-------:| :-------:|  :---:\n';
 
 fs.writeFileSync(fileName, header);
 
@@ -41,7 +41,7 @@ const defaultName = 'Todo...';
   for (let i = 0; i < filesOrFolders.length; i++) {
     const fileOrFolder = filesOrFolders[i];
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|.md$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|ummary.md$|README.md$|((^|[\/\\])\..)/.test(fileOrFolder)) {
       const fileOrFolderName = dir + '/' + fileOrFolder;
 
       /*---------------------if is directory-------------------*/
@@ -62,7 +62,7 @@ const defaultName = 'Todo...';
         /*---------------------if is file----------------------*/
         // get parent folder, check all files at once and save them into one line content
         const files = fs.readdirSync(dir);
-        const contents = { java: [], py: [], js: [] };
+        const contents = { java: [], py: [], js: [], thinking:[] };
 
         files.forEach(file => {
           const filePath = (encodeURIComponent(dir) + '/' + file).replace('./', '');
@@ -79,6 +79,8 @@ const defaultName = 'Todo...';
           } else if (file.indexOf('.js') >= 0) {
             jsFiles++;
             contents.js.push({ name, path });
+          }else {
+            contents.thinking.push({ name, path });
           }
         });
         const questionName = '*' + `${dir.substr(dir.lastIndexOf('/') + 1)}` + '*';
@@ -86,7 +88,8 @@ const defaultName = 'Todo...';
           `|${questionName}` +
           `|${_getCellContent(contents.java)}` +
           `|${_getCellContent(contents.py)}` +
-          `|${_getCellContent(contents.js)}\n`;
+          `|${_getCellContent(contents.js)}` +
+          `|${_getCellContent(contents.thinking)}\n`;
 
         _append(content);
 
