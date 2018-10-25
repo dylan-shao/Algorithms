@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 20 Java files, 19 Python files, 6 JavaScript files
+Totally 20 Java files, 19 Python files, 7 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript  | Thinking 
 |--- |:---:| :---:| :---:|  :---:
@@ -39,3 +39,4 @@ Totally 20 Java files, 19 Python files, 6 JavaScript files
 |*297.Serialize and Deserialize Binary Tree*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F297.Serialize%20and%20Deserialize%20Binary%20Tree/Solution.py)<br>|Todo...|Todo...
 |*41. First Missing Positive*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2F41.%20First%20Missing%20Positive/Solution.py)<br>|Todo...|Todo...
 |*merge*|Todo...|Todo...|[merge.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2Fmerge/merge.js)<br>|Todo...
+|*mySetInterval*|Todo...|Todo...|[mySetInterval.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2Fothers%2FmySetInterval/mySetInterval.js)<br>|Todo...
