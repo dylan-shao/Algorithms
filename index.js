@@ -121,7 +121,7 @@ function _getUrl(path, username = 'dylan-shao', repoName = 'Algorithms', branchN
 }
 
 function _append(content) {
-  fs.appendFile(fileName, content, function(err) {
+  fs.appendFileSync(fileName, content, function(err) {
     if (err) throw err;
   });
 }
