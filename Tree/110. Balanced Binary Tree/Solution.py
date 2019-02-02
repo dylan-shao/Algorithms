@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# time complexity O(n)
+# each node tranversed once
 class Solution:
     def isBalanced(self, root):
         """
@@ -23,12 +25,8 @@ class Solution:
         
         if left_height == -1 or right_height == -1:
             return -1
-        
-        left_height += 1
-        right_height += 1
-        
-        if abs(left_height - right_height) <= 1:
-            return max(left_height, right_height)
+        elif abs(left_height - right_height) <= 1:
+            return max(left_height, right_height) + 1
         else:
             return -1
         
