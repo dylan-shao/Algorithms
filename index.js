@@ -33,7 +33,7 @@ let javaFiles = 0;
 let pyFiles = 0;
 let jsFiles = 0;
 const emojiForFolder = ':seedling::seedling::seedling:';
-const emojiForSeperation = ':wavy_dash::wavy_dash::wavy_dash::wavy_dash:';
+const getEmojiForSeperation = (folderName) => `:four_leaf_clover:${folderName}:four_leaf_clover:`;
 const defaultName = 'Todo...';
 
 (function f(dir) {
@@ -51,7 +51,7 @@ const defaultName = 'Todo...';
 
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
         if (folderName.indexOf('/') < 0 && folderName.indexOf('.') < 0) {
-          const content = `|${emojiForFolder}**${folderName}**${emojiForFolder}|${emojiForSeperation}|${emojiForSeperation}|${emojiForSeperation}\n`;
+          const content = `|${emojiForFolder}**${folderName}**${emojiForFolder}|${getEmojiForSeperation(folderName)}|${getEmojiForSeperation(folderName)}|${getEmojiForSeperation(folderName)}\n`;
           _append(content);
         }
 
