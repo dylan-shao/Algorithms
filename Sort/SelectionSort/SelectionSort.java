@@ -1,4 +1,6 @@
-public Class SelectionSort {
+import java.util.Arrays;
+
+public class SelectionSort {
   public int[] selectionSort(int[] array) {
     if(array==null || array.length <= 1) {
       return array;

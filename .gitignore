@@ -3,7 +3,12 @@
 py_playground/README.md
 
 node_modules
-
+*_test.java
 */tmp/
 
 .vscode
+
+out/*
+
+.idea/
+Algorithms.iml
