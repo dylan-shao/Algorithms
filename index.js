@@ -41,9 +41,9 @@ const defaultName = 'Todo...';
   for (let i = 0; i < filesOrFolders.length; i++) {
     const fileOrFolder = filesOrFolders[i];
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|ummary.md$|README.md$|out$|.idea$|.vscode$|((^|[\/\\])\..)/.test(fileOrFolder)) {
-      const fileOrFolderName = dir + '/' + fileOrFolder;
 
+    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|ummary.md$|README.md$|out$|.idea$|.iml$|.vscode$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+      const fileOrFolderName = dir + '/' + fileOrFolder;
       /*---------------------if is directory-------------------*/
       if (fs.statSync(fileOrFolderName).isDirectory()) {
         // fileOrFoldenoderName start with ./path/to...., so remove it
@@ -70,16 +70,16 @@ const defaultName = 'Todo...';
           const name = file;
           const path = _getUrl(filePath);
 
-          if (file.indexOf('.java') >= 0) {
+          if (file.endsWith('.java')) {
             javaFiles++;
             contents.java.push({ name, path });
-          } else if (file.indexOf('.py') >= 0) {
+          } else if (file.endsWith('.py')) {
             pyFiles++;
             contents.py.push({ name, path });
-          } else if (file.indexOf('.js') >= 0) {
+          } else if (file.endsWith('.js')) {
             jsFiles++;
             contents.js.push({ name, path });
-          }else {
+          } else if (file.indexOf('Thinking.md') >= 0) {
             contents.thinking.push({ name, path });
           }
         });
