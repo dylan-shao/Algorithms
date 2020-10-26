@@ -41,12 +41,12 @@ const defaultName = 'Todo...';
   for (let i = 0; i < filesOrFolders.length; i++) {
     const fileOrFolder = filesOrFolders[i];
     // ignore unwanted files or folders
-    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|ummary.md$|README.md$|((^|[\/\\])\..)/.test(fileOrFolder)) {
+    if (!/^(node_modules)|^(tmp)|.json$|^index\.js.*$|ummary.md$|README.md$|out$|.idea$|.vscode$|((^|[\/\\])\..)/.test(fileOrFolder)) {
       const fileOrFolderName = dir + '/' + fileOrFolder;
 
       /*---------------------if is directory-------------------*/
       if (fs.statSync(fileOrFolderName).isDirectory()) {
-        // fileOrFolderName start with ./path/to...., so remove it
+        // fileOrFoldenoderName start with ./path/to...., so remove it
         const folderName = fileOrFolderName.replace('./', '');
 
         // only if it's the 1st layer folder, then we create a row with folder name and * in there
