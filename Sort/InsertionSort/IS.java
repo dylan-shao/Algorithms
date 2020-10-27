@@ -8,30 +8,36 @@ public class IS {
             return;
         }
         for (int i = 1; i< l.length;i++) {
-
-
             // key value, left is sorted, right is not sorted
-            int key = l[i];
-            int k = i;
-            for (int j=i-1;j>=0;j--) {
-                System.out.println(key + "-" + j +"-" +i + Arrays.toString(l));
-
-                if (l[j] <= key){
-                    break;
-                }
-
-                this.swap(l, k, j);
-                k--;
+            int key = l[i]; // 记录下来key
+            int j = i-1;
+            while (j>=0 && l[j] > key) {
+                // 大的数字后移一位
+                l[j+1] = l[j];
+                j--;
             }
+            // 找到了key的最终位置后，放入该位置
+            l[j+1] = key;
+//            int k = i;
+//            for (int j=i-1;j>=0;j--) {
+//                System.out.println(key + "-" + j +"-" +i + Arrays.toString(l));
+//
+//                if (l[j] <= key){
+//                    break;
+//                }
+//
+//                this.swap(l, k, j);
+//                k=j;
+//            }
         }
 
     }
 
-    private void swap(int[] l, int i, int j) {
-        int tmp = l[i];
-        l[i] = l[j];
-        l[j] = tmp;
-    }
+//    private void swap(int[] l, int i, int j) {
+//        int tmp = l[i];
+//        l[i] = l[j];
+//        l[j] = tmp;
+//    }
     public static void main(String[] args) {
         IS i = new IS();
 
