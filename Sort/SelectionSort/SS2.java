@@ -9,12 +9,14 @@ public class SS2 {
         }
 
         for (int i = 0;i < l.length - 1; i++) {
-            int globalMin = l[i];
+            int globalMinIndex = i;
             for (int j = i + 1; j < l.length; j ++) {
-                if (l[j] < globalMin) {
-                    globalMin = l[j];
-                    this.swap(l, i ,j);
+                if (l[j] < l[globalMinIndex]) {
+                    globalMinIndex = j;
                 }
+            }
+            if (globalMinIndex != i) {
+                this.swap(l, i , globalMinIndex);
             }
         }
     }

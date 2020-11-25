@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 24 Java files, 29 Python files, 7 JavaScript files
+Totally 25 Java files, 29 Python files, 7 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript  | Thinking 
 |--- |:---:| :---:| :---:|  :---:
@@ -25,6 +25,7 @@ Totally 24 Java files, 29 Python files, 7 JavaScript files
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:four_leaf_clover:IterationRecursion:four_leaf_clover:|:four_leaf_clover:IterationRecursion:four_leaf_clover:|:four_leaf_clover:IterationRecursion:four_leaf_clover:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:four_leaf_clover:Sort:four_leaf_clover:|:four_leaf_clover:Sort:four_leaf_clover:|:four_leaf_clover:Sort:four_leaf_clover:
+|*BubbleSort*|[BubbleSort.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FBubbleSort/BubbleSort.java)<br>|Todo...|Todo...|Todo...
 |*InsertionSort*|[IS.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FInsertionSort/IS.java)<br>|Todo...|Todo...|Todo...
 |*QuickSort*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FQuickSort/Solution.py)<br>|[quickSort.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FQuickSort/quickSort.js)<br>|Todo...
 |*SelectionSort*|[SS2.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/SS2.java)<br>[SelectionSort.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/SelectionSort.java)<br>|[selection_sort.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selection_sort.py)<br>|[selectionSort.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FSort%2FSelectionSort/selectionSort.js)<br>|Todo...
