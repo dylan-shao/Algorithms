@@ -5,7 +5,7 @@ All algorithms are written in Java, JavaScript and Python.
 
 ----------
 
-Totally 25 Java files, 29 Python files, 7 JavaScript files
+Totally 25 Java files, 29 Python files, 9 JavaScript files
 
 |Algorithm|  Java  | Python  |  JavaScript  | Thinking 
 |--- |:---:| :---:| :---:|  :---:
@@ -22,6 +22,8 @@ Totally 25 Java files, 29 Python files, 7 JavaScript files
 |*32. Longest Valid Parentheses*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2F32.%20Longest%20Valid%20Parentheses/Solution.py)<br>|Todo...|Todo...
 |*516. Longest Palindromic Subsequence*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2F516.%20Longest%20Palindromic%20Subsequence/Solution.py)<br>|Todo...|Todo...
 |*97. Interleaving String*|Todo...|[Solution.py](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2F97.%20Interleaving%20String/Solution.py)<br>|[isInterleave.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2F97.%20Interleaving%20String/isInterleave.js)<br>|[Thinking.md](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2F97.%20Interleaving%20String/Thinking.md)<br>
+|*box stacking*|Todo...|Todo...|[russianDoll.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2FLIS%2Fbox%20stacking/russianDoll.js)<br>|Todo...
+|*LIS*|Todo...|Todo...|[lis.js](https://github.com/dylan-shao/Algorithms/blob/master/.%2FDP_DFS%2FLIS/lis.js)<br>|Todo...
 |:seedling::seedling::seedling:**IterationRecursion**:seedling::seedling::seedling:|:four_leaf_clover:IterationRecursion:four_leaf_clover:|:four_leaf_clover:IterationRecursion:four_leaf_clover:|:four_leaf_clover:IterationRecursion:four_leaf_clover:
 |*206. Reverse Linked List*|[Iteration.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Iteration.java)<br>[Recursion.java](https://github.com/dylan-shao/Algorithms/blob/master/.%2FIterationRecursion%2F206.%20Reverse%20Linked%20List/Recursion.java)<br>|Todo...|Todo...|Todo...
 |:seedling::seedling::seedling:**Sort**:seedling::seedling::seedling:|:four_leaf_clover:Sort:four_leaf_clover:|:four_leaf_clover:Sort:four_leaf_clover:|:four_leaf_clover:Sort:four_leaf_clover:
